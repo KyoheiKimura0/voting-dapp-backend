@@ -1,0 +1,31 @@
+{
+  "name": "voting-dapp-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "npm run coverage",
+    "coverage": "npx hardhat coverage",
+    "typechain": "npx hardhat typechain",
+    "test:coverage": "nyc --reporter=text-summary npm run test",
+    "precommit": "npm run test:coverage | grep 'All files' | awk '{print $4}' | cut -d'.' -f1 | (read coverage; if [ \"$coverage\" -lt \"95\" ]; then echo 'Code coverage is less than 95%'; exit 1; fi)"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.2",
+    "husky": "^8.0.3",
+    "nyc": "^15.1.0",
+    "solidity-coverage": "^0.8.5",
+    "ts-mocha": "^10.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run precommit"
+    }
+  }
+}
