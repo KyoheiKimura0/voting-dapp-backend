@@ -15,6 +15,8 @@ npm install --save-dev @nomicfoundation/hardhat-toolbox
 npm install --save-dev solidity-coverage
 npm install --save-dev ts-mocha
 npm install --save-dev husky nyc
+npm install hardhat-gas-reporter --save-dev
+npm install @openzeppelin/contracts
 ```
 
 
