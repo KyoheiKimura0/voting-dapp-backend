@@ -3,6 +3,7 @@ pragma solidity ^0.8.20;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
+//no use test
 contract VoiceTokenOpenzeppelin is ERC20 {
     uint8 private _decimals;
 
