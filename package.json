@@ -18,7 +18,8 @@
     "ts-node": "ts-node scripts/$npm_config_file",
     "lint:sol": "solhint --fix --max-warnings 0 \\\"contracts/**/*.sol\\\"",
     "deploy": "ts-node scripts/runDeployScripts.ts",
-    "execute:file": "ts-node scripts/contract-runners/$npm_config_file"
+    "execute:file": "ts-node scripts/contract-runners/$npm_config_file",
+    "build": "npm run compile && npm run typechain"
   },
   "author": "",
   "license": "ISC",

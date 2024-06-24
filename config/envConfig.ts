@@ -13,3 +13,5 @@ export const voiceTokenContractAddress: string = process.env.VOICE_TOKEN_CONTRAC
 export const votingContractAddress: string = process.env.VOTING_CONTRACT_ADDRESS ?? "";
 export const voteProjectContractAddress: string = process.env.VOTE_PROJECT_CONTRACT_ADDRESS ?? "";
 export const votingRouterContractAddress: string = process.env.VOTING_ROUTER_CONTRACT_ADDRESS ?? "";
+
+export const electionContractAddress: string = process.env.ELECTION_CONTRACT_ADDRESS ?? "";
